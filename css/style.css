@@ -219,6 +219,24 @@ button,
     color: var(--background-color);
 }
 
+/* ========= svg icons in features ========= */
+
+.features-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.features-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px 0 25px 0;
+    margin-bottom: 30px;
+
+    background-color: #F5F4FA;
+}
+
 /* ========= чим займаємося ========= */
 
 .photo-wraper-box {
