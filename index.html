@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +23,10 @@
 
     <header class="page-header">
         <div class="container page-header-container">
-            <a href="./index.html" class="logo logohead link">
-                Web<span class="header-logo-span">Studio</span>
-            </a>
             <nav class="page-nav">
+                <a href="./index.html" class="logo logohead link">
+                    Web<span class="header-logo-span">Studio</span>
+                </a>
                 <ul class="nav-list list">
                     <li class="nav-item"><a href="#" class="nav-link link">Студія</a></li>
                     <li class="nav-item"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
@@ -32,10 +34,22 @@
                 </ul>
             </nav>
             <ul class="contact-list list">
-                <li class="contact-item"><a href="mailto:info@devstudio.com"
-                        class="contact-link link">info@devstudio.com</a>
+                <li class="contact-item">
+                    <a href="mailto:info@devstudio.com" class="contact-list-link link">
+                        <svg lang="en" aria-label="envelope icon" class="envelope-list-icon">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
-                <li class="contact-item"><a href="tel:+380961111111" class="contact-link link">+380961111111</a></li>
+                <li class="contact-item">
+                    <a href="tel:+380961111111" class="contact-list-link link">
+                        <svg lang="en" aria-label="smartphone icon" class="smartphone-list-icon">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +380961111111
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -43,7 +57,7 @@
     <main>
         <section class="section section-order">
             <div class="container container-order">
-                <h1 class="order-text">Ефективні рішення для <br> вашого бізнесу</h1>
+                <h1 class="order-text">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="order-button">Замовити послугу</button>
             </div>
         </section>
@@ -95,6 +109,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="section">
             <div class="container">
                 <h2 class="whatwedo-text">Чим ми займаємося</h2>
@@ -105,11 +120,12 @@
                 </ul>
             </div>
         </section>
+
         <section class="section team-section">
             <div class="container">
                 <h2 class="team-text">Наша команда</h2>
                 <ul class="list flex-list team-list">
-                    <li><img width="270" src="./images/worker1.jpg" alt="Ігор Дем'яненко">
+                    <li class="team-li"><img width="270" src="./images/worker1.jpg" alt="Ігор Дем'яненко">
                         <h3 class="teamname">Ігор Дем'яненко</h3>
                         <p class="teamtext">Product Designer</p>
                         <ul class="social-list">
@@ -143,7 +159,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><img width="270" src="./images/worker2.jpg" alt="Ольга Рєпіна">
+                    <li class="team-li"><img width="270" src="./images/worker2.jpg" alt="Ольга Рєпіна">
                         <h3 class="teamname">Ольга Рєпіна</h3>
                         <p class="teamtext">Frontend Developer</p>
                         <ul class="social-list">
@@ -177,7 +193,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><img width="270" src="./images/worker3.jpg" alt="Микола Тарасов">
+                    <li class="team-li"><img width="270" src="./images/worker3.jpg" alt="Микола Тарасов">
                         <h3 class="teamname">Микола Тарасов</h3>
                         <p class="teamtext">Marketing</p>
                         <ul class="social-list">
@@ -211,7 +227,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><img width="270" src="./images/worker4.jpg" alt="Михайло Єрмаков">
+                    <li class="team-li"><img width="270" src="./images/worker4.jpg" alt="Михайло Єрмаков">
                         <h3 class="teamname">Михайло Єрмаков</h3>
                         <p class="teamtext">UI Designer</p>
                         <ul class="social-list">
@@ -294,7 +310,7 @@
                                 <use href="./images/sprite.svg#icon-Logo-6"></use>
                             </svg>
                         </a>
-                    </li>  
+                    </li>
                 </ul>
             </div>
         </section>
@@ -302,19 +318,54 @@
     </main>
 
     <footer>
-        <div class="container">
-            <a href="./index.html" class="logo footerlogo link">
-                Web<span class="footer-logo-span">Studio</span>
-            </a>
-            <address>
-                <ul class="list">
-                    <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                            rel="noopener noreferrer nofollow" class="address-street link">м. Київ, пр-т Лесі Українки,
-                            26</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="address-mail-tel link">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="address-mail-tel link">+380961111111</a></li>
+        <div class="container footer-flex">
+            <div>
+                <a href="./index.html" class="logo footerlogo link">
+                    Web<span class="footer-logo-span">Studio</span>
+                </a>
+                <address>
+                    <ul class="list footer-list">
+                        <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                                class="address-street link">м. Київ, пр-т Лесі Українки,
+                                26</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="address-mail-tel link">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="address-mail-tel link">+380961111111</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div>
+                <h3 class="join-us-text">приєднуйтесь</h3>
+                <ul class="list join-us-list">
+                    <li class="join-us-list-item">
+                        <a href="" class="join-us-list-link">
+                            <svg lang="en" aria-label="instagram icon" class="join-us-list-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-us-list-item">
+                        <a href="" class="join-us-list-link">
+                            <svg lang="en" aria-label="twitter icon" class="join-us-list-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-us-list-item">
+                        <a href="" class="join-us-list-link">
+                            <svg lang="en" aria-label="facebook icon" class="join-us-list-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-us-list-item">
+                        <a href="" class="join-us-list-link">
+                            <svg lang="en" aria-label="linkedin icon" class="join-us-list-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 
